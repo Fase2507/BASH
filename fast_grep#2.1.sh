@@ -1,16 +1,24 @@
 #! /usr/bin/bash
 #fastgrepv2
-#USELESS
 #u can decide which extension u will use
-echo "which words do u wanna search"
-read word
-echo "which path"
-read path
-echo "which type(sh,txt...)"
-read type
-#grep $word" $path 
-echo "***************************"
-grep "$word" $PWD ./*$type
-echo "***************************"
+echo "U have to choose your option"
+echo "if u wanna check specific direction choose 1."
+echo "if u wanna check all direction choose 2."
+read option
+echo "your choice is $option"
 echo
-grep -w "$word" $path 
+case $option in
+
+  1)
+  echo "which words do u wanna search"
+  read word
+  echo "which path"
+  read path
+  grep -w "$word" $path
+  ;;
+  2)
+  echo "which words do u wanna search"
+  read word
+  grep "$word" *
+  ;;
+esac
