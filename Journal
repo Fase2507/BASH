@@ -1,7 +1,0 @@
-#! /usr/bin/bash
-function rndmpswrd(){
-  echo "Please enter the length of the pssword"
-  read PASS_LENGTH 
-  openssl rand -base64 48 |  cut -c1-$PASS_LENGTH 
-}
-rndmpswrd 
