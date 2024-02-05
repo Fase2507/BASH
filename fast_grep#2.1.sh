@@ -1,5 +1,6 @@
 #! /usr/bin/bash
 #fastgrepv2
+#USELESS
 #u can decide which extension u will use
 echo "which words do u wanna search"
 read word
