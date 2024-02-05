@@ -1,1 +1,1 @@
-we will uptade this repo together
+we will develop this repo together
