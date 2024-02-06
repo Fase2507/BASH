@@ -12,7 +12,7 @@
  for p in $(seq 1 $n);
  do
 
-  echo $var1 && openssl rand -base64 48 | cut -c1-$PASS_LENGTH && echo $var '||'
+echo  "("${p}")" && echo -n  "$var1" && openssl rand -base64 48 | cut -c1-$PASS_LENGTH && echo -e "\b$var" 
 
  done
 
