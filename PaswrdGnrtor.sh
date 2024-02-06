@@ -1,6 +1,6 @@
 #! /usr/bin/bash
 #Password generator
-
+#this is bad version no need to use but u know
 function rndmpassword(){
  echo "choose number between 1 and 5"
  read number1
